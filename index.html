@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA - Business Operating System for Small Teams</title>
+<meta name="description" content="NOVA is an open multi-tenant business management platform: sales, invoicing, inventory, procurement, HR, payroll, projects and demand forecasting in one place. Free live demo.">
+<style>
+  :root { --indigo:#4f46e5; --slate9:#0f172a; --slate6:#475569; --slate2:#e2e8f0; --bg:#f8fafc; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; color:var(--slate9); background:var(--bg); line-height:1.6; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+  header { padding:28px 0; display:flex; align-items:center; gap:12px; }
+  .logo { width:40px; height:40px; border-radius:12px; background:var(--indigo); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:20px; }
+  .hero { text-align:center; padding:72px 0 56px; }
+  .hero h1 { font-size:44px; letter-spacing:-0.02em; margin-bottom:16px; }
+  .hero p { font-size:19px; color:var(--slate6); max-width:640px; margin:0 auto 32px; }
+  .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { padding:13px 26px; border-radius:12px; font-weight:600; font-size:16px; text-decoration:none; }
+  .btn-p { background:var(--indigo); color:#fff; }
+  .btn-s { background:#fff; color:var(--slate9); border:1px solid var(--slate2); }
+  .demo-box { background:#fff; border:1px solid var(--slate2); border-radius:16px; padding:24px; max-width:520px; margin:36px auto 0; text-align:center; font-size:15px; }
+  .demo-box code { background:var(--bg); padding:2px 8px; border-radius:6px; }
+  section { padding:56px 0; }
+  h2 { font-size:28px; text-align:center; margin-bottom:36px; letter-spacing:-0.01em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .card { background:#fff; border:1px solid var(--slate2); border-radius:14px; padding:22px; }
+  .card h3 { font-size:16px; margin-bottom:8px; }
+  .card p { font-size:14px; color:var(--slate6); }
+  .note { background:#eef2ff; border:1px solid #c7d2fe; border-radius:14px; padding:20px 24px; font-size:14px; color:#3730a3; max-width:760px; margin:0 auto; }
+  .tech { text-align:center; color:var(--slate6); font-size:14px; }
+  footer { padding:40px 0; text-align:center; color:var(--slate6); font-size:13px; border-top:1px solid var(--slate2); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header><div class="logo">N</div><strong>NOVA</strong></header>
+    <div class="hero">
+      <h1>Run your whole business in one place</h1>
+      <p>NOVA is a multi-tenant business management platform: sales, invoicing, inventory, procurement, HR, payroll, projects and demand forecasting - in one clean, fast web app. English and Arabic, fully right-to-left.</p>
+      <div class="btns">
+        <a class="btn btn-p" href="https://nova-5se7.onrender.com">Open the live demo</a>
+        <a class="btn btn-s" href="https://github.com/bassell01/nova">View the code on GitHub</a>
+      </div>
+      <div class="demo-box">
+        Demo sign-in: <code>admin@acme.demo</code> / <code>admin123</code><br>
+        <span style="color:var(--slate6); font-size:13px;">A guided tour starts automatically on first login (English / العربية). Free demo host sleeps when idle - the first visit may take up to a minute to wake.</span>
+      </div>
+    </div>
+
+    <section>
+      <h2>Everything a small business needs</h2>
+      <div class="grid">
+        <div class="card"><h3>Sales flow, end to end</h3><p>Customers, quotations, sales orders and multi-currency invoices with payment tracking.</p></div>
+        <div class="card"><h3>Inventory &amp; procurement</h3><p>Live stock levels, low-stock alerts, CSV import and purchase orders that receive into stock.</p></div>
+        <div class="card"><h3>HR &amp; payroll</h3><p>Employee directory, monthly payroll runs with configurable deduction brackets.</p></div>
+        <div class="card"><h3>Projects</h3><p>Track work with tasks, deadlines and progress per customer or internal project.</p></div>
+        <div class="card"><h3>Ask NOVA</h3><p>Ask questions in plain words and get answers computed from your data by a rule-based engine.</p></div>
+        <div class="card"><h3>Demand forecast</h3><p>A transparent statistical projection from your sales history. You can see exactly how every number is derived.</p></div>
+        <div class="card"><h3>Multi-tenant &amp; roles</h3><p>Separate workspaces per company, role-based access, audit log, two-factor authentication.</p></div>
+        <div class="card"><h3>English &amp; Arabic</h3><p>Full RTL layout with a one-click language toggle, including the guided onboarding tour.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="note">
+        <strong>Straight talk:</strong> NOVA is a finished, tested product - the automated test suite (backend and frontend) runs green in CI on every commit. The forecast is a documented statistical baseline, not a machine-learning model. The demo above runs on free hosting to keep evaluation costs at zero.
+      </div>
+    </section>
+
+    <section class="tech">
+      Built with Spring Boot, React and PostgreSQL. Docker image included; deploy anywhere in minutes.
+    </section>
+
+    <footer>NOVA - business management platform. Demo: <a href="https://nova-5se7.onrender.com">nova-5se7.onrender.com</a> - Code: <a href="https://github.com/bassell01/nova">github.com/bassell01/nova</a></footer>
+  </div>
+</body>
+</html>
